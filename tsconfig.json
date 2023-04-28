@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "strict": false,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "strictFunctionTypes": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": false,		// 允许全局导入ts文件
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "lib": ["dom", "esnext"],
+    "incremental": true,
+    "paths": {
+      // 模块名到基于 baseUrl 的路径映射的列表
+      "@/*": ["src/*"]
+    },
+		"types": [
+      "vite/client",
+			"unplugin-vue-define-options/macros-global"
+    ],
+		"typeRoots": ["./node_modules/@types/"]
+  },
+  "rules": {
+    "member-access": false,
+    "ordered-imports": false, // 在导入模块时，按照字母顺序导入
+    "quotemark": false, // 控制引号单选和双选
+    "no-console": false, // 控台台输出console
+    "semicolon": false, // 分号
+    "jsx-no-lambda": false, // 匿名函数
+    "no-unused-vars": false, // 声明未使用
+    "@typescript-eslint/no-unused-vars": [false]
+  },
+  // 忽略编译的文件
+  "exclude": [
+    "public",
+    "dist",
+    "build",
+    "node_modules",
+		"unocss.config.ts",
+  ],
+  "include": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"vite.config.ts",
+    "auto-imports.d.ts"
+	]
+}

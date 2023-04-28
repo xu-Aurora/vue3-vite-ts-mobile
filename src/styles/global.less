@@ -1,0 +1,24 @@
+// 全局样式
+
+@test-color: 'red';
+
+// 引入图片,并自适应
+.bg_img(@url) {
+  background: url(@url);
+  background-size: 100% 100%;
+}
+
+// 单行文本溢出
+.one_ellipsis() {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// 多行文本溢出
+.more_ellipsis(@line) {
+  -webkit-line-break: @line;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}

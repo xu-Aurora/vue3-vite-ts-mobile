@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+docs
+components.d.ts
+global-vue.d.ts
+auto-imports.d.ts

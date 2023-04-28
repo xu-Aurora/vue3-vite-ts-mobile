@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "vscode-icons-team.vscode-icons",
+    "davidanson.vscode-markdownlint",
+    "stylelint.vscode-stylelint",
+    "dbaeumer.vscode-eslint",
+    "csstools.postcss",
+    "mikestead.dotenv",
+    "eamodio.gitlens",
+    "antfu.iconify",
+    "antfu.unocss",
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin"
+  ]
+}
